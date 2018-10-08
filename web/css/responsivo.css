@@ -123,9 +123,11 @@ servico-icone {
 
 
 .grid-8 img {
-	background-size: cover;
-	display: block;
-	max-width: 100%
+	width: 290px;
+}
+
+.grid-16 img {
+	width: 290px;
 }
 
 /* Serviços */
