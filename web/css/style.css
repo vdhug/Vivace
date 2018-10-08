@@ -245,7 +245,7 @@ img {
 	padding: 10px 20px 20px;
 }
 
-.servico-icone {
+.servico-icone, .cliente-icone {
 	background: #000;
 	text-align: center;
 }
