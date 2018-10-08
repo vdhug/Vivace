@@ -42,9 +42,10 @@ servico-icone {
 	width: 181px;
 }
 
-.clientes-lista .grid-8 {
-	background: red;
+.grid-8 img {
+	background-size: cover;
 }
+
 }
 
 /*Estilo para smartphone*/
