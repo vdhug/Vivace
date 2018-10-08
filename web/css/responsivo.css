@@ -123,14 +123,15 @@ servico-icone {
 
 
 .clientes .container .clientes-lista .grid-8 img {
-	width: 300px;
+	width: 250;
 	margin: 0 auto;
 	border: 4px solid #FFF;
 }
 
 .clientes .container .clientes-lista .grid-16 img {
-	width: 300px;
+	width: 250px;
 	margin: 0 auto;
+	border: 4px solid #FFF;
 }
 
 /* Serviços */
