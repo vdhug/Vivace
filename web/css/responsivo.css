@@ -126,12 +126,14 @@ servico-icone {
 	width: 296px;
 	margin: 0 auto;
 	padding-inline-start: 0px;
+	float: left;
 }
 
 .clientes .container .clientes-lista .grid-16 img {
 	width: 300px;
 	margin: 0 auto;
 	padding-inline-start: 0px;
+	float: left;
 }
 
 /* Serviços */
