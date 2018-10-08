@@ -42,9 +42,6 @@ servico-icone {
 	width: 181px;
 }
 
-.grid-8 img {
-	background-size: cover;
-}
 
 }
 
@@ -122,6 +119,13 @@ servico-icone {
 .missao-sobre ul li {
 	font-size: 14px;
 	line-height: 25px;
+}
+
+
+.grid-8 img {
+	background-size: cover;
+	display: block;
+	max-width: 100%
 }
 
 /* Serviços */
