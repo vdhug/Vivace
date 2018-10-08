@@ -123,11 +123,13 @@ servico-icone {
 
 
 .grid-8 img {
-	width: 180px;
+	width: 2000px;
+	margin: 0 auto;
 }
 
 .grid-16 img {
-	width: 180px;
+	width: 200px;
+	margin: 0 auto;
 }
 
 /* Serviços */
