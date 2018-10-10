@@ -269,23 +269,24 @@ img {
 	padding: 40px 0;
 }
 
-.clientes .subtitulo {
+.cliente .subtitulo {
 	color: #9e9b9c;
 }
 
-.clientes .subtitulo:after {
+.cliente .subtitulo:after {
 	background: #9e9b9c;
 }
 
-.clientes-lista li:last-child {
+.cliente-lista div:last-of-type {
 	margin-top: 20px;
 }
 
-.clientes .call p {
+
+.cliente .call p {
 	color: #9e9b9c;
 }
 
-.clientes .btn-secundario:hover {
+.cliente .btn-secundario:hover {
 	color: #FFF;
 	border-color: #FFF;
 }
