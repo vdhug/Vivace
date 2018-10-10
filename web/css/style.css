@@ -277,7 +277,7 @@ img {
 	background: #9e9b9c;
 }
 
-.cliente-lista div:last-of-type {
+.cliente-lista .grid-16 {
 	margin-top: 20px;
 }
 
