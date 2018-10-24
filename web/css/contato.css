@@ -9,6 +9,7 @@
 	padding: 40px 0;
 }
 
+
 .form {
 
 }
@@ -21,6 +22,7 @@
 	display: block;
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 18px;
+	color: #041408;
 	line-height: 25px;
 	margin-bottom: 4px;
 }
@@ -28,6 +30,7 @@
 .form-contato input {
 	display: block;
 	width: 100%;
+	color: #041408;
 	border: 4px solid;
 	background: none;
 	padding: 7px 10px;
@@ -44,6 +47,7 @@
 	border: 4px solid;
 	background: none;
 	padding: 7px 10px;
+	color: #041408;
 	margin-bottom: 20px;
 	outline: none;
 	font-size: 14px;
@@ -52,19 +56,20 @@
 
 .form-contato button {
 	padding: 7px 40px;
-	color: #000;
-	border-color: #000;
+	color: #041408;
+	border-color: #041408;
 	background: none;
 }
 
 .form-contato button:hover {
-	border-color: #9e9b9c;
-	color: #9e9b9c;
+	border-color: #1d6930;
+	color: #1d6930;
 }
 
 .contato-dados h3 {
 	font-size: 18px;
 	line-height: 25px;
+	color: #041408;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -90,12 +95,12 @@
 }
 
 .contato-dados ul li a {
-	border: 3px solid #9e9b9c;
+	border: 3px solid #041408;
 	display: block;
 	padding: 10px;
 }
 
 .contato-dados ul li a:hover {
-	border-color: #000;
+	border-color: #1d6930;
 }
 
