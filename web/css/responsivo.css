@@ -136,6 +136,7 @@ servico-icone {
 /* Serviços */
 
 .servico-item h2 {
+	height: auto;
 	top: -120px;
 	margin-bottom: -111px;
 }
