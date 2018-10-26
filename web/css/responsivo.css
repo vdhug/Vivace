@@ -136,9 +136,17 @@ servico-icone {
 /* Serviços */
 
 .servico-item h2 {
-	height: auto;
-	top: -120px;
+	font-size: 28px;
+	top: -90px;
 	margin-bottom: -111px;
+}
+
+.servico-item h2:after, .servico-item h2:before {
+	content: none;
+}
+
+.grid-5 img {
+	margin-top: 53px;
 }
 
 servico-icone {
