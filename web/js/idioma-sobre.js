@@ -71,9 +71,7 @@ function traduzEspanhol() {
 	document.querySelector('#politica-seguranca-descricao').innerHTML = "El énfasis en la seguridad del trabajo, la salud y la integridad física son los mayores objetivos.";
 	document.querySelector('#politica-sustentabilidade-titulo').innerHTML = "Sostenibilidad";
 	document.querySelector('#politica-sustentabilidade-descricao').innerHTML = "Prevención y reducción de los impactos ambientales generados por sus actividades.";
-	document.querySelector('#politicas-etiqueta').innerHTML = "Haga clic aquí y conozca más de nuestra políticas.";
-	document.querySelector('#politicas-botao').innerHTML = "Políticas";
-
+	
 	
 
 	//Traduz footer
