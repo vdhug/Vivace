@@ -2,8 +2,9 @@
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
 .header {
-	padding: 22px;
+	border: 22px solid #e9e6df;
 }
+
 
 .qualidade:after {
 	right: 66px;
@@ -63,6 +64,10 @@ servico-icone {
 .header {
 	position: relative;
 	padding-bottom: 0px;
+}
+
+.header-flutuante {
+	display: none;
 }
 
 .header img {
