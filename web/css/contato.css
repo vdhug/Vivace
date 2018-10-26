@@ -10,9 +10,21 @@
 }
 
 
-.form {
-
+.contato-dados ul {
+	padding-right: 60px;
 }
+
+.contato-dados ul li {
+	font-family: Georgia, "Time New Roman", serif;
+	font-size: 16px;
+	padding: 5px 15px;
+}
+
+.orcamento-dados ul li:nth-child(2) {
+	background: #1d1d1d;
+}
+
+
 
 .form-contato {
 	padding-right: 60px;
