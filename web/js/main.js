@@ -1,11 +1,15 @@
 $(window).scroll(function(){
 	if(window.innerWidth > 959) {
 		if($(document).scrollTop() > 14) {
-    		document.getElementById("header").style.display = "none";
-    		document.getElementById("header-flutuante").style.display  = "inline";
+    		document.getElementById("header").style.opacity = "0";
+    		document.getElementById("header").style.visibility = "hidden";
+    		document.getElementById("header-flutuante").style.visibility = "visible";
+    		document.getElementById("header-flutuante").style.opacity = "1";
     	} else {
-    		document.getElementById("header").style.display = "inline";
-    		document.getElementById("header-flutuante").style.display  = "none";
+    		document.getElementById("header").style.visibility = "visible";
+    		document.getElementById("header").style.opacity = "1";
+    		document.getElementById("header-flutuante").style.opacity = "0";
+    		document.getElementById("header-flutuante").style.visibility = "hidden";
     	}
 	}
 	else if(window.innerWidth > 767) {

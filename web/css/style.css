@@ -111,17 +111,20 @@ img {
 	background: #e9e6df; /* cinza */
 	border: 19px solid #e9e6df;
 	z-index: 10;
-	transition: all 2.0s ease;
-    -webkit-transition: all 2.0s ease;
-    -moz-transition: all 2.0s ease;
+	opacity: 1;
+	visibility: visible;
+	transition: visibility 0s, opacity 0.5s linear;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    -moz-transition: visibility 0s, opacity 0.5s linear;
 }
 
 .header-flutuante {
-	display: none;
+	opacity: 0;
+	visibility: hidden;
 	border: 5px solid #e9e6df;
-	transition: all 2.0s ease;
-    -webkit-transition: all 2.0s ease;
-    -moz-transition: all 2.0s ease;
+	transition: visibility 0s, opacity 0.5s linear;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    -moz-transition: visibility 0s, opacity 0.5s linear;
 }
 
 
