@@ -72,7 +72,7 @@ function traduzEspanhol() {
 
 function traduzIngles() {
 	//Traduz todo menu
-	document.querySelector('#menu-inicio').innerHTML = "Index";
+	document.querySelector('#menu-inicio').innerHTML = "Home";
 	document.querySelector('#menu-sobre').innerHTML = "About";
 	document.querySelector('#menu-servicos').innerHTML = "Services";
 	document.querySelector('#menu-clientes').innerHTML = "Clients";
