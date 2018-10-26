@@ -1,16 +1,20 @@
 $(window).scroll(function(){
 	if(window.innerWidth > 959) {
 		if($(document).scrollTop() > 14) {
-    		document.getElementById("header").style.padding = "5px 0px";
+    		document.getElementById("header").style.display = "none";
+    		document.getElementById("header-flutuante").style.display  = "inline";
     	} else {
-    		document.getElementById("header").style.padding = "19px 0px";
+    		document.getElementById("header").style.display = "inline";
+    		document.getElementById("header-flutuante").style.display  = "none";
     	}
 	}
 	else if(window.innerWidth > 767) {
 		if($(document).scrollTop() > 14) {
-    		document.getElementById("header").style.padding = "5px 0px";
+    		document.getElementById("header").style.display = "none";
+    		document.getElementById("header-flutuante").style.display  = "inline";
     	} else {
-    		document.getElementById("header").style.padding = "22px 0px";
+    		document.getElementById("header").style.display = "inline";
+    		document.getElementById("header-flutuante").style.display  = "none";
     	}
 	}
     

@@ -109,11 +109,19 @@ img {
 	top: 0;
 	width: 100%;
 	background: #e9e6df; /* cinza */
-	padding: 19px 0;
+	border: 19px solid #e9e6df;
 	z-index: 10;
-	transition: padding 0.6s ease;
-    -webkit-transition: padding 0.6s ease;
-    -moz-transition: padding 0.6s ease;
+	transition: all 1.0s ease;
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+}
+
+.header-flutuante {
+	display: none;
+	border: 5px solid #e9e6df;
+	transition: all 1.0s ease;
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
 }
 
 
