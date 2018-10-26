@@ -93,8 +93,11 @@ servico-icone {
 	border-color: #fff;
 }
 
+
+
 .header_menu ul li a.menu-ativo {
-	border-collapse: #FFF;
+	
+	border: 4px solid #9e9b9c;
 }
 
 /*Introducao*/
