@@ -21,21 +21,33 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/contato.css">
 		<link rel="stylesheet" href="css/responsivo.css">
+		<link rel="stylesheet" type="text/css" href="flags/flags.min.css">
 		<script src="js/libs/modernizr.js"></script>
+		<script src="js/idioma.js"></script>
 	</head>
 	<body>
 		<header class="header">
 			<div class="container">
-				<a class="grid-4" href="index.html">
+				<a class="grid-2" href="index.html">
 					<img src="img/logo-vivace.png" alt="Vivace">
 				</a>
-				<nav class="grid-12 header_menu">
+				<div class="grid-3">
+					
+					<div class="idioma"><a id="id-portugues" href="#" onclick="portugues()"><img src="flags/blank.gif" class="flag flag-br" alt="Português"/></a>
+					</div>
+					<div class="idioma"><a id="id-espanhol" href="#" onclick="espanhol()"><img src="flags/blank.gif" class="flag flag-mx" alt="Espanhol"/></a>
+					</div>
+					<div class="idioma"><a id="id-ingles" href="#" onclick="ingles()"><img src="flags/blank.gif" class="flag flag-us" alt="Inglês"/></a>
+					</div>
+					
+				</div>
+				<nav class="grid-10 header_menu">
 					<ul>
 						<li><a href="index.html">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="servicos.html">Serviços</a></li>
-						<li><a href="clientes.html">Clientes</a></li>
-						<li><a href="contato.html" class="menu-ativo">Contato</a></li>
+						<li><a href="sobre.html" onclick="location.href=this.href+'?lg='+idioma;return false;">Sobre</a></li>
+						<li><a href="servicos.html" onclick="location.href=this.href+'?lg='+idioma;return false;">Serviços</a></li>
+						<li><a href="clientes.html" onclick="location.href=this.href+'?lg='+idioma;return false;">Clientes</a></li>
+						<li><a href="contato.html" class="menu-ativo" onclick="location.href=this.href+'?lg='+idioma;return false;">Contato</a></li>
 					</ul>
 				</nav>
 			</div>

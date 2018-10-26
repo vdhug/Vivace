@@ -1,6 +1,10 @@
 /*Estilo para tablets*/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
+.header {
+	padding: 22px;
+}
+
 .qualidade:after {
 	right: 66px;
 }
@@ -31,17 +35,24 @@ servico-icone {
 	padding: 40px;
 }
 
+
+
 .servico-info p {
-	font-size: 14px;
-	line-height: 20px;
 	padding: 20px 30px;
-	height: 122px;
+	height: 220px;
 }
 
 .servico-info ul li {
 	width: 181px;
 }
 
+.idioma {
+	margin-left: 10px;
+}
+
+.header_menu ul li {
+	margin-left: 15px;
+}
 
 }
 
