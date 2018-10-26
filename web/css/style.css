@@ -111,17 +111,17 @@ img {
 	background: #e9e6df; /* cinza */
 	border: 19px solid #e9e6df;
 	z-index: 10;
-	transition: all 1.0s ease;
-    -webkit-transition: all 1.0s ease;
-    -moz-transition: all 1.0s ease;
+	transition: all 2.0s ease;
+    -webkit-transition: all 2.0s ease;
+    -moz-transition: all 2.0s ease;
 }
 
 .header-flutuante {
 	display: none;
 	border: 5px solid #e9e6df;
-	transition: all 1.0s ease;
-    -webkit-transition: all 1.0s ease;
-    -moz-transition: all 1.0s ease;
+	transition: all 2.0s ease;
+    -webkit-transition: all 2.0s ease;
+    -moz-transition: all 2.0s ease;
 }
 
 
