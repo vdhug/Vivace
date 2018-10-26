@@ -1,3 +1,21 @@
+$(window).scroll(function(){
+	if(window.innerWidth > 959) {
+		if($(document).scrollTop() > 14) {
+    		document.getElementById("header").style.padding = "5px 0px";
+    	} else {
+    		document.getElementById("header").style.padding = "19px 0px";
+    	}
+	}
+	else if(window.innerWidth > 767) {
+		if($(document).scrollTop() > 14) {
+    		document.getElementById("header").style.padding = "5px 0px";
+    	} else {
+    		document.getElementById("header").style.padding = "22px 0px";
+    	}
+	}
+    
+});
+
 $(".rslides").responsiveSlides({
   auto: true,             // Boolean: Animate automatically, true or false
   speed: 2000,            // Integer: Speed of the transition, in milliseconds

@@ -111,7 +111,13 @@ img {
 	background: #e9e6df; /* cinza */
 	padding: 19px 0;
 	z-index: 10;
+
+	transition: font-size 0.5s, height 0.5s;
+    -webkit-transition: font-size 0.5s, height 0.5s;
+    -moz-transition: font-size 0.5s, height 0.5s;
 }
+
+
 
 .header_menu {
 	text-align: right;
