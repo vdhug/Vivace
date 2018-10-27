@@ -10,7 +10,7 @@ $(window).scroll(function(){
     		document.getElementById("header-flutuante").style.display = "none";
     		document.getElementById("header").style.display = "block";
     		setTimeout(function () {
-				$("#header").addClass("animated fadeInRight");
+				$("#header").addClass("animated fadeInDown");
 			}, 800);
     		
     	}
