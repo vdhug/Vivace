@@ -1,14 +1,18 @@
 $(window).scroll(function(){
 	if(window.innerWidth > 959) {
-		if($(document).scrollTop() > 14) {
+		if($(document).scrollTop() > 40) {    		
     		document.getElementById("header").style.display = "none";
     		document.getElementById("header-flutuante").style.display = "block";
-    		document.getElementById("header-flutuante").style.visibility = "visible";
-    		document.getElementById("header-flutuante").style.opacity = "1";
+    		setTimeout(function () {
+				$("#header-flutuante").addClass("animated fadeInUp");
+			}, 400);
     	} else {
+    		document.getElementById("header-flutuante").style.display = "none";
     		document.getElementById("header").style.display = "block";
-    		document.getElementById("header-flutuante").style.opacity = "0";
-    		document.getElementById("header-flutuante").style.visibility = "hidden";
+    		setTimeout(function () {
+				$("#header").addClass("animated fadeInRight");
+			}, 800);
+    		
     	}
 	}
 	else if(window.innerWidth > 767) {
