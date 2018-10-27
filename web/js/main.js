@@ -1,17 +1,22 @@
+var menu = "header";
 $(window).scroll(function(){
 	if(window.innerWidth > 959) {
-		if($(document).scrollTop() > 40) {    		
-    		document.getElementById("header").style.display = "none";
+		if($(document).scrollTop() >= 50 && menu==="header") {
+			menu = "header-flutuante";
     		document.getElementById("header-flutuante").style.display = "block";
+    		$("#header-flutuante").removeClass("animated fadeOutDown");
     		setTimeout(function () {
-				$("#header-flutuante").addClass("animated fadeInUp");
+				$("#header-flutuante").addClass("animated fadeInDown");
 			}, 400);
-    	} else {
-    		document.getElementById("header-flutuante").style.display = "none";
-    		document.getElementById("header").style.display = "block";
+    	}  
+    	if($(document).scrollTop() < 50 && menu==="header-flutuante") {
+			menu = "header";
+    		$("#header-flutuante").removeClass("animated fadeInDown");
     		setTimeout(function () {
-				$("#header").addClass("animated fadeInDown");
-			}, 800);
+				$("#header-flutuante").addClass("animated fadeOutDown");
+			}, 400);
+
+    		document.getElementById("header-flutuante").style.display = "none";
     		
     	}
 	}
