@@ -40,12 +40,7 @@ function ingles() {
 }
 
 function traduzEspanhol() {
-	//Traduz todo menu
-	document.querySelector('#menu-inicio').innerHTML = "Inicio";
-	document.querySelector('#menu-sobre').innerHTML = "Sobre";
-	document.querySelector('#menu-servicos').innerHTML = "Servicios";
-	document.querySelector('#menu-clientes').innerHTML = "Clientes";
-	document.querySelector('#menu-contato').innerHTML = "Contacto";
+	
 
 	//Traduz toda introducao
 	document.querySelector('#introducao-titulo').innerHTML = "Clientes";
@@ -60,23 +55,13 @@ function traduzEspanhol() {
 	//Traduz quebra
 	document.querySelector('#quebra-citacao').innerHTML = "Recuerde eso, los ingenieros hacen sueños en realidad.";
 
-	//Traduz footer
-	document.querySelector('#footer-titulo').innerHTML = "Nuestra Historia";
-	document.querySelector('#footer-historia').innerHTML = "La Vivace tiene una sólida capacidad técnica y alta competencia en gestionar proyectos, con el foco en las necesidades de los clientes y con soluciones de alto valor agregado.";
-	document.querySelector('#footer-contato').innerHTML = "Contacto";
-	document.querySelector('#footer-redes-sociais').innerHTML = "Síguenos";
-	document.querySelector('#footer-direitos').innerHTML = "Vivace Engenharia LTDA - Algunos derechos reservados.";
+	
 
 }
 
 
 function traduzIngles() {
-	//Traduz todo menu
-	document.querySelector('#menu-inicio').innerHTML = "Home";
-	document.querySelector('#menu-sobre').innerHTML = "About";
-	document.querySelector('#menu-servicos').innerHTML = "Services";
-	document.querySelector('#menu-clientes').innerHTML = "Clients";
-	document.querySelector('#menu-contato').innerHTML = "Contact";
+	
 
 	//Traduz toda introducao
 	document.querySelector('#introducao-titulo').innerHTML = "Clients";
@@ -91,24 +76,13 @@ function traduzIngles() {
 	//Traduz quebra
 	document.querySelector('#quebra-citacao').innerHTML = "Remember that, engineers make dreams come true.";
 	
-	//Traduz footer
-	document.querySelector('#footer-titulo').innerHTML = "Our Story";
-	document.querySelector('#footer-historia').innerHTML = "Vivace has proven technical capacity and high competence in managing projects, focusing on customer needs and solutions with high added value.";
-	document.querySelector('#footer-contato').innerHTML = "Contact";
-	document.querySelector('#footer-redes-sociais').innerHTML = "Social Media";
-	document.querySelector('#footer-direitos').innerHTML = "Vivace Engenharia LTDA - Some rights reserved.";
+	
 
 }
 
 
 function traduzPortugues() {
-	//Traduz todo menu
-	document.querySelector('#menu-inicio').innerHTML = "Início";
-	document.querySelector('#menu-sobre').innerHTML = "Sobre";
-	document.querySelector('#menu-servicos').innerHTML = "Serviços";
-	document.querySelector('#menu-clientes').innerHTML = "Clientes";
-	document.querySelector('#menu-contato').innerHTML = "Contato";
-
+	
 	//Traduz toda introducao
 	document.querySelector('#introducao-titulo').innerHTML = "Clientes";
 	document.querySelector('#introducao-descricao').innerHTML = "Conheça a opinião de nossos clientes";
@@ -122,11 +96,6 @@ function traduzPortugues() {
 	//Traduz quebra
 	document.querySelector('#quebra-citacao').innerHTML = "Lembre-se disso, engenheiros tornam sonhos em realidade.";
 
-	//Traduz footer
-	document.querySelector('#footer-titulo').innerHTML = "Nossa História";
-	document.querySelector('#footer-historia').innerHTML = "A Vivace possui comprovada capacidade técnica e alta competência em gerenciar projetos, com o foco nas necessidades dos clientes e com soluções de alto valor agregado.";
-	document.querySelector('#footer-contato').innerHTML = "Contato";
-	document.querySelector('#footer-redes-sociais').innerHTML = "Redes Sociais";
-	document.querySelector('#footer-direitos').innerHTML = "Vivace Engenharia LTDA - Alguns direitos reservados.";
+	
 
 }

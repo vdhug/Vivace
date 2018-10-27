@@ -1,4 +1,41 @@
 var menu = "header";
+document.getElementById("id-portugues").addEventListener("click", function(){
+    traduzPortuguesFooterAndHeader();
+});
+document.getElementById("id-portugues-flutuante").addEventListener("click", function(){
+    traduzPortuguesFooterAndHeader();
+});
+
+
+document.getElementById("id-espanhol").addEventListener("click", function(){
+    traduzEspanholFooterAndHeader();
+});
+document.getElementById("id-espanhol-flutuante").addEventListener("click", function(){
+    traduzEspanholFooterAndHeader();
+});
+
+
+document.getElementById("id-ingles").addEventListener("click", function(){
+    traduzInglesFooterAndHeader();
+});
+document.getElementById("id-ingles-flutuante").addEventListener("click", function(){
+    traduzInglesFooterAndHeader();
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    if ((getQueryStringValue("lg")) != ""){
+    	idioma = getQueryStringValue("lg");
+    }
+    if(idioma === "espanhol"){
+    	traduzEspanholFooterAndHeader();
+    }
+    else if (idioma === "ingles"){
+    	traduzInglesFooterAndHeader();
+    }
+
+});
+
 $(window).scroll(function(){
 	if(window.innerWidth > 959) {
 		if($(document).scrollTop() >= 50 && menu==="header") {
@@ -21,16 +58,22 @@ $(window).scroll(function(){
     	}
 	}
 	else if(window.innerWidth > 767) {
-		if($(document).scrollTop() > 14) {
-    		document.getElementById("header").style.opacity = "0";
-    		document.getElementById("header").style.visibility = "hidden";
-    		document.getElementById("header-flutuante").style.visibility = "visible";
-    		document.getElementById("header-flutuante").style.opacity = "1";
-    	} else {
-    		document.getElementById("header").style.visibility = "visible";
-    		document.getElementById("header").style.opacity = "1";
-    		document.getElementById("header-flutuante").style.opacity = "0";
-    		document.getElementById("header-flutuante").style.visibility = "hidden";
+		if($(document).scrollTop() >= 14 && menu === "header") {
+			menu = "header-flutuante";
+    		document.getElementById("header-flutuante").style.display = "block";
+    		$("#header-flutuante").removeClass("animated fadeOutDown");
+    		setTimeout(function () {
+				$("#header-flutuante").addClass("animated fadeInDown");
+			}, 400);
+    	} 
+    	if($(document).scrollTop() < 14 && menu === "header-flutuante") {
+			menu = "header";
+    		$("#header-flutuante").removeClass("animated fadeInDown");
+    		setTimeout(function () {
+				$("#header-flutuante").addClass("animated fadeOutDown");
+			}, 400);
+
+    		document.getElementById("header-flutuante").style.display = "none";
     	}
 	}
     
@@ -126,3 +169,74 @@ $('.formphp').on('submit', function() {
 	
 	return false;
 });
+
+function traduzEspanholFooterAndHeader(){
+	//Traduz todo menu
+	document.querySelector('#menu-inicio').innerHTML = "Inicio";
+	document.querySelector('#menu-sobre').innerHTML = "Sobre";
+	document.querySelector('#menu-servicos').innerHTML = "Servicios";
+	document.querySelector('#menu-clientes').innerHTML = "Clientes";
+	document.querySelector('#menu-contato').innerHTML = "Contacto";
+
+
+	//Traduz todo menu-flutuante
+	document.querySelector('#menu-inicio-flutuante').innerHTML = "Inicio";
+	document.querySelector('#menu-sobre-flutuante').innerHTML = "Sobre";
+	document.querySelector('#menu-servicos-flutuante').innerHTML = "Servicios";
+	document.querySelector('#menu-clientes-flutuante').innerHTML = "Clientes";
+	document.querySelector('#menu-contato-flutuante').innerHTML = "Contacto";
+
+	//Traduz footer
+	document.querySelector('#footer-titulo').innerHTML = "Nuestra Historia";
+	document.querySelector('#footer-historia').innerHTML = "La Vivace tiene una sólida capacidad técnica y alta competencia en gestionar proyectos, con el foco en las necesidades de los clientes y con soluciones de alto valor agregado.";
+	document.querySelector('#footer-contato').innerHTML = "Contacto";
+	document.querySelector('#footer-redes-sociais').innerHTML = "Síguenos";
+	document.querySelector('#footer-direitos').innerHTML = "Vivace Engenharia LTDA - Algunos derechos reservados.";
+}
+
+function traduzInglesFooterAndHeader() {
+	//Traduz todo menu
+	document.querySelector('#menu-inicio').innerHTML = "Index";
+	document.querySelector('#menu-sobre').innerHTML = "About";
+	document.querySelector('#menu-servicos').innerHTML = "Services";
+	document.querySelector('#menu-clientes').innerHTML = "Clients";
+	document.querySelector('#menu-contato').innerHTML = "Contact";
+	
+	//Traduz todo menu-flutuante
+	document.querySelector('#menu-inicio-flutuante').innerHTML = "Index";
+	document.querySelector('#menu-sobre-flutuante').innerHTML = "About";
+	document.querySelector('#menu-servicos-flutuante').innerHTML = "Services";
+	document.querySelector('#menu-clientes-flutuante').innerHTML = "Clients";
+	document.querySelector('#menu-contato-flutuante').innerHTML = "Contact";
+
+	//Traduz footer
+	document.querySelector('#footer-titulo').innerHTML = "Our Story";
+	document.querySelector('#footer-historia').innerHTML = "Vivace has proven technical capacity and high competence in managing projects, focusing on customer needs and solutions with high added value.";
+	document.querySelector('#footer-contato').innerHTML = "Contact";
+	document.querySelector('#footer-redes-sociais').innerHTML = "Social Media";
+	document.querySelector('#footer-direitos').innerHTML = "Vivace Engenharia LTDA - Some rights reserved.";
+}
+
+
+function traduzPortuguesFooterAndHeader() { 
+	//Traduz todo menu
+	document.querySelector('#menu-inicio').innerHTML = "Início";
+	document.querySelector('#menu-sobre').innerHTML = "Sobre";
+	document.querySelector('#menu-servicos').innerHTML = "Serviços";
+	document.querySelector('#menu-clientes').innerHTML = "Clientes";
+	document.querySelector('#menu-contato').innerHTML = "Contato";
+
+	//Traduz todo menu-flutuante
+	document.querySelector('#menu-inicio-flutuante').innerHTML = "Início";
+	document.querySelector('#menu-sobre-flutuante').innerHTML = "Sobre";
+	document.querySelector('#menu-servicos-flutuante').innerHTML = "Serviços";
+	document.querySelector('#menu-clientes-flutuante').innerHTML = "Clientes";
+	document.querySelector('#menu-contato-flutuante').innerHTML = "Contato";
+
+	//Traduz footer
+	document.querySelector('#footer-titulo').innerHTML = "Nossa História";
+	document.querySelector('#footer-historia').innerHTML = "A Vivace possui comprovada capacidade técnica e alta competência em gerenciar projetos, com o foco nas necessidades dos clientes e com soluções de alto valor agregado.";
+	document.querySelector('#footer-contato').innerHTML = "Contato";
+	document.querySelector('#footer-redes-sociais').innerHTML = "Redes Sociais";
+	document.querySelector('#footer-direitos').innerHTML = "Vivace Engenharia LTDA - Alguns direitos reservados.";
+}

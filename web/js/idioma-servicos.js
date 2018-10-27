@@ -40,13 +40,7 @@ function ingles() {
 }
 
 function traduzEspanhol() {
-	//Traduz todo menu
-	document.querySelector('#menu-inicio').innerHTML = "Inicio";
-	document.querySelector('#menu-sobre').innerHTML = "Sobre";
-	document.querySelector('#menu-servicos').innerHTML = "Servicios";
-	document.querySelector('#menu-clientes').innerHTML = "Clientes";
-	document.querySelector('#menu-contato').innerHTML = "Contacto";
-
+	
 	//Traduz toda introducao
 	document.querySelector('#introducao-titulo').innerHTML = "Servicios";
 	document.querySelector('#introducao-descricao').innerHTML = "Conozca más sobre nuestros servicios";
@@ -78,14 +72,6 @@ function traduzEspanhol() {
 
 	//Traduz quebra
 	document.querySelector('#quebra-citacao').innerHTML = "Recuerde eso, los ingenieros hacen sueños en realidad.";
-
-	//Traduz footer
-	document.querySelector('#footer-titulo').innerHTML = "Nuestra Historia";
-	document.querySelector('#footer-historia').innerHTML = "La Vivace tiene una sólida capacidad técnica y alta competencia en gestionar proyectos, con el foco en las necesidades de los clientes y con soluciones de alto valor agregado.";
-	document.querySelector('#footer-contato').innerHTML = "Contacto";
-	document.querySelector('#footer-redes-sociais').innerHTML = "Síguenos";
-	document.querySelector('#footer-direitos').innerHTML = "Vivace Engenharia LTDA - Algunos derechos reservados.";
-
 }
 
 
