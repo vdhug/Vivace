@@ -5,8 +5,8 @@
 $email_envio = 'vitorhug97@gmail.com'; // E-mail receptor
 $email_pass = 'VITORHUGO10'; // Senha do e-mail
 
-$site_name = ''; // Nome do Site
-$site_url = ''; // URL do Site
+$site_name = 'Engenharia Vivace'; // Nome do Site
+$site_url = 'www.engenhariavivace.com'; // URL do Site
 
 $host_smtp = 'smtp.gmail.com'; // HOST SMTP Ex: smtp.domain.com.br
 $host_port = '465'; // Porta do Host
@@ -42,30 +42,28 @@ if ($_POST['leaveblank'] != '' or $_POST['dontchange'] != 'http://') {
 
 else if (isset($_POST['nome'])){
 
-require ('./PHPMailer/PHPMailerAutoload.php');
+require 'phpmailer/PHPMailerAutoload.php';
 
-$mail = new PHPMailer;
+$mail = new PHPMailer();
 $mail->CharSet = 'UTF-8';
 
 $mail->isSMTP();
 $mail->Host = $host_smtp;
+$mail->SMTPSecure = "ssl";
 $mail->SMTPAuth = true;
 $mail->Username = $email_envio;
 $mail->Password = $email_pass;
 $mail->Port = $host_port; 
 
-$mail->From = $email_envio;
+$mail->setFrom($email_envio, 'Engenharia Vivace');
 
 $mail->addAddress($email_envio);
 
-$mail->FromName = 'Formulário de Contato';
-$mail->AddReplyTo($_POST['email'], $_POST['nome']);
-
-$mail->WordWrap = 70;
 
 $mail->Subject = 'Formulário - ' . $site_name . ' - ' . $_POST['nome'];
 
 $mail->Body = $body_content;
+
 
 if(!$mail->send()) {
   
